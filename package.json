@@ -4,7 +4,7 @@
   "description": "webpack loader to work in tandem with gulp-rev",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha test/test.js"
   },
   "keywords": [
     "gulp-rev",

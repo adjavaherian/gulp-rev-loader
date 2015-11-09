@@ -1,0 +1,1 @@
+var doge = require('../example/images/doge');

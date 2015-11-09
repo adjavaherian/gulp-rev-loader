@@ -1,0 +1,1 @@
+{"errors":[],"warnings":[],"version":"1.12.3","hash":"436e265c00d45ec033ce","publicPath":"/dist/","assetsByChunkName":{"app":"app.bundle.436e265c00d45ec033ce.js"},"assets":[{"name":"app.bundle.436e265c00d45ec033ce.js","size":3347,"chunks":[0],"chunkNames":["app"],"emitted":true},{"name":"webpack-assets.json","size":0,"chunks":[],"chunkNames":[]}],"children":[]}

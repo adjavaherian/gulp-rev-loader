@@ -3,7 +3,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var StatsPlugin = require('stats-webpack-plugin');
-var manifestParams = '?debug=false&limit=5000&hash=sha512&digest=hex&relativeSplit=images/&prefix=images&manifest=rev-manifest&outputDir=' + path.join(__dirname, 'dist');
+//var manifestParams = '?debug=false&limit=5000&hash=sha512&digest=hex&relativeSplit=images/&prefix=images&manifest=rev-manifest&outputDir=' + path.join(__dirname, 'dist');
 
 module.exports = {
     name: 'example',
@@ -12,7 +12,7 @@ module.exports = {
         console: true
     },
     entry: {
-        index: path.join(__dirname, 'app.js')
+        app: path.join(__dirname, 'app.js')
     },
     output: {
         path: path.join(__dirname, 'dist'),
@@ -25,12 +25,6 @@ module.exports = {
         modulesDirectories: ['node_modules'],
         extensions: ['', '.json', '.js', '.jsx', '.scss', '.png', '.jpg', '.jpeg', '.gif']
     },
-    resolveLoader: {
-        root: __dirname,
-        alias: {
-            'manifest-loader': path.join(__dirname, '../', 'index') + manifestParams
-        }
-    },
     module: {
         loaders: [
             {
@@ -39,15 +33,23 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    'manifest-loader'
-                ]
+                loader: path.join(__dirname, '../', 'index'),
+                query: {
+                    debug: true,
+                    limit: 5000,
+                    hash: 'sha512',
+                    digest: 'hex',
+                    relativeSplit: 'images/',
+                    prefix: 'images',
+                    manifest: 'rev-manifest',
+                    outputDir: path.join(__dirname, 'dist')
+                }
             }
         ],
         noParse: []
     },
     plugins: [
-        new StatsPlugin(path.join(__dirname, 'dist', 'webpack-assets.json'), {
+        new StatsPlugin(path.join('webpack-assets.json'), {
             assetsByChunkName: true,
             source: false,
             reasons: false,
