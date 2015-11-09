@@ -1,8 +1,8 @@
 #Gulp Rev Loader
 This webpack loader is designed to work in tandem with gulp-rev.  
-For example, you might have a build process that uses gulp and gulp-rev to tag hashes on your rev'd images or files. Gulp-rev creates a manifest of the processed files.  Using gulp-rev-loader checks your files against the rev-manifestand re-writes them to their rev'd paths at webpack compile time.  You can also update path prefixes and hash out the file content based on file size.
+For example, you might have a build process that uses gulp and [gulp-rev](https://github.com/sindresorhus/gulp-rev) to tag hashes on your rev'd images or files. Gulp-rev creates a manifest of the processed files.  Using gulp-rev-loader checks your files against the rev-manifest and re-writes them to their rev'd paths at webpack compile time.  You can also update path prefixes and hash out the file content based on file size.
 
-##install
+##Install
 `npm install gulp-rev-loader`
  
 ##Configure a gulp-rev task
