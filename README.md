@@ -68,5 +68,4 @@ module.exports = {
 
 #Running the example
 
-`cd gulp-rev-loader/examples`
-`gulp`
+`cd gulp-rev-loader/examples && gulp`

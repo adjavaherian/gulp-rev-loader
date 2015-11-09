@@ -1,0 +1,30 @@
+{
+  "name": "gulp-rev-loader",
+  "version": "1.0.0",
+  "description": "webpack loader to work in tandem with gulp-rev",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "gulp-rev",
+    "webpack",
+    "webpack-loader"
+  ],
+  "author": "@adjavaherian",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "loader-utils": "^0.2.11",
+    "mime": "^1.3.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rev": "^6.0.1",
+    "run-sequence": "^1.1.4",
+    "stats-webpack-plugin": "^0.2.2",
+    "webpack": "^1.12.3",
+    "webpack-stats-plugin": "^0.1.1"
+  }
+}
