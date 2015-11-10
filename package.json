@@ -1,6 +1,6 @@
 {
   "name": "gulp-rev-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webpack loader to work in tandem with gulp-rev",
   "main": "index.js",
   "scripts": {

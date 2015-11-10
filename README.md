@@ -1,11 +1,11 @@
-#Gulp Rev Loader
+# Gulp Rev Loader
 This webpack loader is designed to work in tandem with gulp-rev.  
 For example, you might have a build process that uses gulp and [gulp-rev](https://github.com/sindresorhus/gulp-rev) to tag hashes on your rev'd images or files. Gulp-rev creates a manifest of the processed files.  Using gulp-rev-loader checks your files against the rev-manifest and re-writes them to their rev'd paths at webpack compile time.  You can also update path prefixes and hash out the file content based on file size.
 
-##Install
+## Install
 `npm install gulp-rev-loader`
  
-##Configure a gulp-rev task
+## Configure a gulp-rev task
 ```javascript
 //gulpfile.js
 var gulp = require('gulp');
@@ -20,7 +20,7 @@ gulp.task('default', function() {
 });
 ```
 
-##Configure the webpack loader
+## Configure the webpack loader
 ```javascript
 //webpack.config.js
 var webpack = require('webpack');
@@ -70,7 +70,7 @@ module.exports = {
 //var manifestParams = '?debug=false&limit=5000&hash=sha512&digest=hex&relativeSplit=images/&prefix=images&manifest=rev-manifest&outputDir=' + path.join(__dirname, 'dist');
 ```
 
-##Options
+## Options
 ```javascript
     debug: true, //bool to output logging info
     limit: 5000, //int to limit min k before hashing file src
@@ -82,8 +82,8 @@ module.exports = {
     outputDir: path.join(__dirname, 'dist') //string path to output directory
 ```
 
-##Running the example
+## Running the example
 `cd gulp-rev-loader/examples && gulp`
 
-##Testing
+## Testing
 `npm install -g mocha && npm test`
