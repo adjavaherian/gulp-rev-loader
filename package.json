@@ -1,7 +1,8 @@
 {
   "name": "gulp-rev-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "webpack loader to work in tandem with gulp-rev",
+  "homepage": "https://github.com/adjavaherian/gulp-rev-loader",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/test.js"
@@ -12,7 +13,7 @@
     "webpack-loader"
   ],
   "author": "@adjavaherian",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "gulp-util": "^3.0.7",
     "loader-utils": "^0.2.11",
