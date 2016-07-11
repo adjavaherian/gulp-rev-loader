@@ -12,7 +12,7 @@ module.exports = function(content) {
     var options = loaderUtils.parseQuery(this.query);
     var manifest = require(path.join(options.outputDir, options.manifest));
     var relativeSplit = options.relativeSplit || '/';
-    var fileName = this.resourcePath.split(relativeSplit)[1] || '';
+    var fileName = this.resourcePath.split(relativeSplit).slice(-1) || '';
     var prefix = options.prefix || '';
     var result = manifest[fileName] ? prefix + '/' + manifest[fileName] : '';
 
