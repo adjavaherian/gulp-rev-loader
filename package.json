@@ -7,6 +7,10 @@
   "scripts": {
     "test": "mocha test/test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adjavaherian/gulp-rev-loader"
+  },
   "keywords": [
     "gulp-rev",
     "webpack",
