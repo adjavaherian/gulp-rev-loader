@@ -20,10 +20,12 @@ module.exports = {
         filename: '[name].bundle.[hash].js'
     },
     resolve: {
-        root: path.join(__dirname),
-        fallback: path.join(__dirname, 'node_modules'),
-        modulesDirectories: ['node_modules'],
-        extensions: ['', '.json', '.js', '.jsx', '.scss', '.png', '.jpg', '.jpeg', '.gif']
+        alias: {
+          node_modules: path.resolve(__dirname, 'node_modules'),
+          images: path.resolve(__dirname, 'images')
+        },
+        modules: ['node_modules'],
+        extensions: ['.json', '.js', '.jsx', '.scss', '.png', '.jpg', '.jpeg', '.gif']
     },
     module: {
         loaders: [
@@ -45,8 +47,7 @@ module.exports = {
                     outputDir: path.join(__dirname, 'dist')
                 }
             }
-        ],
-        noParse: []
+        ]
     },
     plugins: [
         new StatsPlugin(path.join('webpack-assets.json'), {
@@ -57,8 +58,5 @@ module.exports = {
             chunks: false
         })
     ],
-    bail: true,
-    debug: true
+    bail: true
 };
-
-
