@@ -19,17 +19,16 @@
   "author": "@adjavaherian",
   "license": "MIT",
   "dependencies": {
-    "gulp-util": "^3.0.7",
-    "loader-utils": "^0.2.11",
-    "mime": "^1.3.4",
-    "path": "^0.12.7"
+    "gulp-util": "^3.0.8",
+    "loader-utils": "^1.1.0",
+    "mime": "^1.3.4"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-rev": "^6.0.1",
-    "run-sequence": "^1.1.4",
-    "stats-webpack-plugin": "^0.2.2",
-    "webpack": "^1.12.3",
+    "gulp": "^3.9.1",
+    "gulp-rev": "^7.1.2",
+    "run-sequence": "^1.2.2",
+    "stats-webpack-plugin": "^0.6.0",
+    "webpack": "^2.4.0",
     "webpack-stats-plugin": "^0.1.1"
   }
 }

@@ -9,7 +9,7 @@ module.exports = function(content) {
     this.cacheable && this.cacheable();
     var callback = this.async();
 
-    var options = loaderUtils.parseQuery(this.query);
+    var options = loaderUtils.getOptions(this);
     var manifest = require(path.join(options.outputDir, options.manifest));
     var relativeSplit = options.relativeSplit || '/';
     var fileName = this.resourcePath.split(relativeSplit).slice(-1) || '';

@@ -7,11 +7,10 @@ var fs = require('fs');
 var testConfig = {
     entry: path.join(__dirname, 'app.test.js'),
     resolve: {
-        root: path.join(__dirname),
-        extensions: ['', '.json', '.jpg']
+        extensions: ['.json', '.jpg']
     },
     output: {
-        filename: path.join(__dirname, 'bundle.js'),
+        filename: path.join('./test', 'bundle.js'),
         libraryTarget: 'commonjs2'
     },
     module: {
