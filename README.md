@@ -1,6 +1,8 @@
 # Gulp Rev Loader
-This Webpack loader is designed to work in tandem with gulp-rev :punch:.  
+This Webpack 2.x loader is designed to work in tandem with gulp-rev :punch:.  
 For example, you might have a build process that uses gulp and [gulp-rev](https://github.com/sindresorhus/gulp-rev) to tag hashes on your rev'd images or files. Gulp-rev creates a manifest of the processed files.  Using gulp-rev-loader checks your files against the rev-manifest and re-writes them to their rev'd paths at webpack compile time.  You can also update path prefixes and hash out the file content based on file size.
+
+Note: People using Webpack 1.x can still use the previous version of this loader.
 
 ## Install
 `npm install gulp-rev-loader`
